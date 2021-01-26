@@ -1,33 +1,19 @@
-import { ChakraProvider, Flex, Grid, Heading, Input } from '@chakra-ui/react';
+import { Center, ChakraProvider, Container, Heading } from '@chakra-ui/react';
 import * as React from 'react';
+import CandidateInformation from './components/CandidateInformation';
+import Interests from './components/Interests';
 import custonTheme from './theme';
 
 export const App = () => (
 	<ChakraProvider theme={custonTheme}>
-		<Grid
-			height="100vh"
-			as="main"
-			templateColumns="1fr 300px 300px  1fr"
-			templateRows="1fr 300px 1fr"
-			templateAreas="
-        '. . . .'
-        '. logo form .'
-        '. . . .'"
-		>
-			<Flex gridArea="logo" flexDir="column" alignItems="flex-start">
-				<Heading size="2xl">Logo vai aqui</Heading>
-			</Flex>
-
-			<Flex
-				gridArea="form"
-				flexDir="column"
-				alignItems="stretch"
-				padding={16}
-				borderRadius="md"
-				backgroundColor="gray.700"
-			>
-				<Input height="50px" />
-			</Flex>
-		</Grid>
+		<Container width="100%" maxW="860px">
+			<Center flexDirection="column">
+				<Heading as="h1" size="2xl">
+					Éricson Rogério Moreira
+				</Heading>
+				<CandidateInformation />
+				<Interests />
+			</Center>
+		</Container>
 	</ChakraProvider>
 );
