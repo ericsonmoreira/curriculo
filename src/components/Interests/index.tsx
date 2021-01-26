@@ -1,4 +1,4 @@
-import { Badge, Heading, Wrap, WrapItem } from '@chakra-ui/react';
+import { Badge, Wrap, WrapItem } from '@chakra-ui/react';
 import React from 'react';
 import Card from '../Card';
 
@@ -23,12 +23,11 @@ const interestsData = [
 
 const Interests: React.FC = () => {
 	return (
-		<Card>
-			<Heading>Interesses</Heading>
+		<Card title="Interesses">
 			<Wrap>
 				{interestsData.map((elem) => (
 					<WrapItem key={elem}>
-						<Badge variant="outline" colorScheme="green" fontSize="sm">
+						<Badge colorScheme="green" fontSize="sm">
 							#{elem}
 						</Badge>
 					</WrapItem>

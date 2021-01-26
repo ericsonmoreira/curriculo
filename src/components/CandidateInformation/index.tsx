@@ -11,7 +11,7 @@ import Card from '../Card';
 
 const CandidateInformation: React.FC = () => {
 	return (
-		<Card>
+		<Card title="Informações Gerais">
 			<HStack>
 				<Icon as={MapMarkerIcon} color="red.400" />
 				<Text fontSize="md" alignItems="center">

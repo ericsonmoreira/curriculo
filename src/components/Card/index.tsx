@@ -1,17 +1,26 @@
-import { StackProps, VStack } from '@chakra-ui/react';
+import { Heading, StackProps, VStack } from '@chakra-ui/react';
 import React from 'react';
 
-const Card: React.FC<StackProps> = ({ children, ...rest }) => {
+interface CardProps {
+	title?: string;
+}
+
+const Card: React.FC<StackProps & CardProps> = ({
+	children,
+	title,
+	...rest
+}) => {
 	return (
 		<VStack
 			w="100%"
 			p={4}
 			alignItems="flex-start"
 			borderColor="gray"
-			borderRadius="md"
+			rounded="md"
 			shadow="lg"
 			{...rest}
 		>
+			{title && <Heading fontSize="lg" color="indigo">{title}</Heading>}
 			{children}
 		</VStack>
 	);
