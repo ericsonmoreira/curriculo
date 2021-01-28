@@ -20,7 +20,7 @@ const Card: React.FC<StackProps & CardProps> = ({
 			shadow="lg"
 			{...rest}
 		>
-			{title && <Heading fontSize="lg" color="indigo">{title}</Heading>}
+			{title && <Heading fontSize="2xl">{title}</Heading>}
 			{children}
 		</VStack>
 	);
