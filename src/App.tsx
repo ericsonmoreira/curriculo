@@ -8,6 +8,7 @@ import Languages from 'components/Languages';
 import MainTitle from 'components/MainTitle';
 import ProfessionalExperiences from 'components/ProfessionalExperiences';
 import custonTheme from 'theme';
+import Footer from 'components/Footer';
 
 export const App = () => (
 	<ChakraProvider theme={custonTheme}>
@@ -20,6 +21,7 @@ export const App = () => (
 				<ProfessionalExperiences />
 				<Languages />
 				<Interests />
+				<Footer />
 			</VStack>
 		</Center>
 	</ChakraProvider>
