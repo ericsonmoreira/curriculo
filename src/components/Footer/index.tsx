@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
 	return (
 		<Box width="full">
 			<Text>
-				Esse currículo pode ser encontrado em{' '}
+				Este currículo pode ser encontrado em{' '}
 				<Link
 					href="https://ericsonmoreira-curriculo.netlify.app/"
 					isExternal
