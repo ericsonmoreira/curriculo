@@ -24,8 +24,8 @@ const Card: React.FC<StackProps & CardProps> = ({
 			{...rest}
 		>
 			{title && (
-				<Heading fontSize="2xl">
-					<u>{title}</u>
+				<Heading as="u" fontSize="2xl">
+					{title}
 				</Heading>
 			)}
 			{children}
