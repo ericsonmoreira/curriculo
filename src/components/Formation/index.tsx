@@ -1,17 +1,15 @@
-import { HStack, Tag, Text } from '@chakra-ui/react';
+import { HStack, Text } from '@chakra-ui/react';
 import Card from 'components/Card';
+import JobPeriod from 'components/JobPeriod';
 import React from 'react';
 
 const Formation: React.FC = () => {
 	return (
 		<Card title="Formação">
-			<HStack>
+			<HStack width="full" justify="space-between">
 				<Text>Bacharelado em Ciência da Computação - UECE</Text>
-				<Tag borderRadius="full" colorScheme="blue">
-					Cursando
-				</Tag>
+				<JobPeriod start={'2019.2'} notEndLabel="Atualmente Cursando" />
 			</HStack>
-			<Text color="gray.600">[2019.2 - Atualmente]</Text>
 		</Card>
 	);
 };

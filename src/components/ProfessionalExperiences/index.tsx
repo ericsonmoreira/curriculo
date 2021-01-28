@@ -1,6 +1,6 @@
-import { Flex, HStack, Icon, Tag, Text } from '@chakra-ui/react';
+import { Divider, Flex, HStack, Text } from '@chakra-ui/react';
 import Card from 'components/Card';
-import { LogInIcon, LogOutIcon } from 'icons';
+import JobPeriod from 'components/JobPeriod';
 import React from 'react';
 
 interface IProfessionalExperience {
@@ -59,43 +59,31 @@ const ProfessionalExperiences: React.FC = () => {
 	return (
 		<Card title="Experiências Profissionais">
 			{proExData.map((elem, index) => (
-				<Flex
-					key={index}
-					direction="column"
-					padding={2}
-					width="full"
-					border="1px solid"
-					borderColor="blue.200"
-					rounded="md"
-				>
-					<HStack justify="space-between">
-						<Text as="strong">{elem.title}</Text>
-						<HStack>
-							<HStack alignItems="center">
-								<Icon as={LogInIcon} color="green.600" />
-								<Text>{elem.pediod.start}</Text>
-							</HStack>
-							{elem.pediod.end ? (
-								<HStack>
-									<Icon as={LogOutIcon} color="red.600" />
-									<Text>{elem.pediod.start}</Text>
-								</HStack>
-							) : (
-								<Tag borderRadius="full" colorScheme="blue">
-									Atual
-								</Tag>
-							)}
+				<>
+					<Flex
+						key={index}
+						direction="column"
+						padding={2}
+						width="full"
+						border="1px solid"
+						borderColor="blue.200"
+						rounded="md"
+					>
+						<HStack justify="space-between">
+							<Text as="strong">{elem.title}</Text>
+							<JobPeriod start={elem.pediod.start} end={elem.pediod.end} />
 						</HStack>
-					</HStack>
-					<Text>
-						<strong>Cargo: </strong>
-						{elem.office}
-					</Text>
-					<Text>
-						<strong>Atribuições: </strong>
-						{elem.assignments}
-					</Text>
-				</Flex>
+						<Text>
+							<strong>Cargo: </strong>
+							{elem.office}
+						</Text>
+						<Text>
+							<strong>Atribuições: </strong>
+							{elem.assignments}
+						</Text>
+					</Flex>
+					{index < proExData.length - 1 && <Divider />}
+				</>
 			))}
 		</Card>
 	);
