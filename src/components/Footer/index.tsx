@@ -5,7 +5,7 @@ import React from 'react';
 const Footer: React.FC = () => {
 	return (
 		<Box width="full">
-			<Text>
+			<Text color="white">
 				Este currículo pode ser encontrado em{' '}
 				<Link
 					href="https://ericsonmoreira-curriculo.netlify.app/"

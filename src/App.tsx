@@ -12,7 +12,12 @@ import Footer from 'components/Footer';
 
 export const App = () => (
 	<ChakraProvider theme={custonTheme}>
-		<Center flexDirection="column" padding={12} backgroundColor="gray.100">
+		<Center
+			flexDirection="column"
+			padding={12}
+			backgroundColor="gray.100"
+			bgGradient="linear(to-b, gray.200, gray.900)"
+		>
 			<VStack maxWidth="860px" spacing={8}>
 				<MainTitle />
 				<CandidateInformation />
