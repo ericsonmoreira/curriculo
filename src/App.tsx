@@ -1,25 +1,24 @@
-import { Center, ChakraProvider, Heading, VStack } from '@chakra-ui/react';
+import { Center, ChakraProvider, VStack } from '@chakra-ui/react';
 import * as React from 'react';
-import AboutMe from './components/AboutMe';
-import CandidateInformation from './components/CandidateInformation';
-import Formation from './components/Formation';
-import Interests from './components/Interests';
-import Languages from './components/Languages';
-import ProfessionalExperiences from './components/ProfessionalExperiences';
-import custonTheme from './theme';
+import AboutMe from 'components/AboutMe';
+import CandidateInformation from 'components/CandidateInformation';
+import Formation from 'components/Formation';
+import Interests from 'components/Interests';
+import Languages from 'components/Languages';
+import MainTitle from 'components/MainTitle';
+import ProfessionalExperiences from 'components/ProfessionalExperiences';
+import custonTheme from 'theme';
 
 export const App = () => (
 	<ChakraProvider theme={custonTheme}>
-		<Center flexDirection="column" padding={12}>
+		<Center flexDirection="column" padding={12} backgroundColor="gray.100">
 			<VStack maxWidth="860px" spacing={8}>
-				<Heading as="h1" size="4xl" marginY={10} width="100%">
-					Éricson Rogério Moreira
-				</Heading>
+				<MainTitle />
 				<CandidateInformation />
 				<AboutMe />
 				<Formation />
-        <ProfessionalExperiences />
-        <Languages />
+				<ProfessionalExperiences />
+				<Languages />
 				<Interests />
 			</VStack>
 		</Center>

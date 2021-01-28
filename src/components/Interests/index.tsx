@@ -1,6 +1,6 @@
 import { Badge, Wrap, WrapItem } from '@chakra-ui/react';
+import Card from 'components/Card';
 import React from 'react';
-import Card from '../Card';
 
 const interestsData = [
 	'JavascriptIcon',

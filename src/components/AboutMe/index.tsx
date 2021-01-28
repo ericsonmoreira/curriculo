@@ -1,6 +1,6 @@
 import { Text } from '@chakra-ui/react';
+import Card from 'components/Card';
 import React from 'react';
-import Card from '../Card';
 
 const AboutMe: React.FC = () => {
 	return (

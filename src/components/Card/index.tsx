@@ -12,6 +12,9 @@ const Card: React.FC<StackProps & CardProps> = ({
 }) => {
 	return (
 		<VStack
+			borderTopWidth="1rem"
+			borderTopColor="blue.500"
+			bgColor="white"
 			w="100%"
 			p={4}
 			alignItems="flex-start"
@@ -20,7 +23,11 @@ const Card: React.FC<StackProps & CardProps> = ({
 			shadow="lg"
 			{...rest}
 		>
-			{title && <Heading fontSize="2xl">{title}</Heading>}
+			{title && (
+				<Heading fontSize="2xl">
+					<u>{title}</u>
+				</Heading>
+			)}
 			{children}
 		</VStack>
 	);

@@ -1,7 +1,7 @@
 import { List, ListIcon, ListItem, Tag } from '@chakra-ui/react';
+import Card from 'components/Card';
+import { CheckCircleIcon } from 'icons';
 import React from 'react';
-import { CheckCircleIcon } from '../../icons';
-import Card from '../Card';
 
 interface Language {
 	name: string;

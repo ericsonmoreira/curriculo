@@ -1,13 +1,13 @@
 import { HStack, Icon, Link, Text } from '@chakra-ui/react';
-import React from 'react';
+import Card from 'components/Card';
 import {
-	LinkedinIcon,
 	GithubIcon,
+	LinkedinIcon,
+	MailIcon,
 	MapMarkerIcon,
 	PhoneIcon,
-	MailIcon,
-} from '../../icons';
-import Card from '../Card';
+} from 'icons';
+import React from 'react';
 
 const CandidateInformation: React.FC = () => {
 	return (
