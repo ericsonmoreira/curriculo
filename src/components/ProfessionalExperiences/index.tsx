@@ -59,9 +59,8 @@ const ProfessionalExperiences: React.FC = () => {
 	return (
 		<Card title="Experiências Profissionais">
 			{proExData.map((elem, index) => (
-				<>
+				<div key={index}>
 					<Flex
-						key={index}
 						direction="column"
 						padding={2}
 						width="full"
@@ -83,7 +82,7 @@ const ProfessionalExperiences: React.FC = () => {
 						</Text>
 					</Flex>
 					{index < proExData.length - 1 && <Divider />}
-				</>
+				</div>
 			))}
 		</Card>
 	);
