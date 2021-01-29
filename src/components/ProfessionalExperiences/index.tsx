@@ -16,7 +16,7 @@ interface IProfessionalExperience {
 const proExData: IProfessionalExperience[] = [
 	{
 		title: 'FFIT - Inovação e Tecnologia',
-		office: 'Estagiário',
+		office: 'Freelancer',
 		assignments:
 			'Participar como programador Frontend do time de desenvolvimento de sistema web utilizando ReactJS.',
 		pediod: {
@@ -34,16 +34,6 @@ const proExData: IProfessionalExperience[] = [
 		},
 	},
 	{
-		title: 'Banco do Brasil',
-		office: 'Escriturário',
-		assignments:
-			'Atuar na comercialização de produtos e serviços bancários, atendimento ao público, atuar no caixa, manter contato com clientes e prestar informações aos clientes e usuários.',
-		pediod: {
-			start: '11/2013',
-			end: '09/2018',
-		},
-	},
-	{
 		title: 'Fundação Cearense de Pesquisa e Cultura - FUNCAP',
 		office: 'Estagiário',
 		assignments:
@@ -51,6 +41,16 @@ const proExData: IProfessionalExperience[] = [
 		pediod: {
 			start: '09/2010',
 			end: '09/2011',
+		},
+	},
+	{
+		title: 'Banco do Brasil',
+		office: 'Escriturário',
+		assignments:
+			'Atuar na comercialização de produtos e serviços bancários, atendimento ao público, atuar no caixa, manter contato com clientes e prestar informações aos clientes e usuários.',
+		pediod: {
+			start: '11/2013',
+			end: '09/2018',
 		},
 	},
 ];

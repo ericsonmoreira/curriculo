@@ -6,7 +6,7 @@ const AboutMe: React.FC = () => {
 	return (
 		<Card title="Sobre mim">
 			<Text>
-				Olá… Me chamo <strong>Éricson</strong>, moro em{' '}
+				Olá… meu nome é <strong>Éricson</strong>, moro em{' '}
 				<strong>Fortaleza - CE</strong>, curso de{' '}
 				<strong>
 					Ciência da Computação na UECE - Universidade Estadual do Ceará
