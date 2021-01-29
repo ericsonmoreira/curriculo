@@ -7,6 +7,7 @@ import {
 	MailIcon,
 	MapMarkerIcon,
 	PhoneIcon,
+	WhatsAppIcon,
 } from 'icons';
 import React from 'react';
 
@@ -24,6 +25,15 @@ const CandidateInformation: React.FC = () => {
 				<Text fontSize="md" alignItems="center">
 					<strong>Fone</strong> · (85) 99792-6510
 				</Text>
+			</HStack>
+			<HStack>
+				<Icon as={WhatsAppIcon} color="#128C7E" />
+				<Text fontSize="md" alignItems="center">
+					<strong>WhatsApp</strong> ·
+				</Text>
+				<Link href="https://wa.me/5585997926510" isExternal color="teal.500">
+					(85) 99792-6510 <Icon as={ExternalLinkIcon} />
+				</Link>
 			</HStack>
 			<HStack>
 				<Icon as={MailIcon} />

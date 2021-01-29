@@ -9,11 +9,4 @@ export { FiCheckCircle as CheckCircleIcon } from 'react-icons/fi';
 export { FiLogIn as LogInIcon } from 'react-icons/fi';
 export { FiLogOut as LogOutIcon } from 'react-icons/fi';
 export { FiExternalLink as ExternalLinkIcon } from 'react-icons/fi';
-
-
-
-
-
-
-
-
+export { AiOutlineWhatsApp as WhatsAppIcon } from 'react-icons/ai';
