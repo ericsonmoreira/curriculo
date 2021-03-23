@@ -3,7 +3,7 @@ import Card from 'components/Card';
 import JobPeriod from 'components/JobPeriod';
 import React from 'react';
 
-interface IProfessionalExperience {
+export interface IProfessionalExperience {
 	title: string;
 	office: string;
 	pediod: {

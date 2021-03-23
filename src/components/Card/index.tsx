@@ -15,7 +15,6 @@ const Card: React.FC<StackProps & CardProps> = ({
 			bgColor="gray.700"
 			w="100%"
 			alignItems="flex-start"
-			borderColor="gray"
 			rounded="md"
 			shadow="lg"
 			overflow="hidden"
@@ -33,7 +32,9 @@ const Card: React.FC<StackProps & CardProps> = ({
 					{title}
 				</Heading>
 			</Box>
-			<Box display="flex" flexDir="column" p={2}>{children}</Box>
+			<Box display="flex" flexDir="column" w="full" p={2}>
+				{children}
+			</Box>
 		</VStack>
 	);
 };
