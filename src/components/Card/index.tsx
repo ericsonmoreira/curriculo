@@ -2,7 +2,7 @@ import { Heading, StackProps, VStack } from '@chakra-ui/react';
 import React from 'react';
 
 interface CardProps {
-	title?: string;
+  title?: string;
 }
 
 const Card: React.FC<StackProps & CardProps> = ({

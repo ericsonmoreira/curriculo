@@ -1,4 +1,4 @@
-import { Divider, Flex, HStack, Text } from '@chakra-ui/react';
+import { HStack, Text, VStack } from '@chakra-ui/react';
 import Card from 'components/Card';
 import JobPeriod from 'components/JobPeriod';
 import React from 'react';
@@ -60,15 +60,15 @@ const ProfessionalExperiences: React.FC = () => {
 		<Card title="Experiências Profissionais">
 			{proExData.map((elem, index) => (
 				<div key={index}>
-					<Flex
-						direction="column"
+					<VStack
 						padding={2}
 						width="full"
 						border="1px solid"
 						borderColor="blue.200"
 						rounded="md"
+						alignItems="start"
 					>
-						<HStack justify="space-between">
+						<HStack justify="space-between" w="full">
 							<Text as="strong">{elem.title}</Text>
 							<JobPeriod start={elem.pediod.start} end={elem.pediod.end} />
 						</HStack>
@@ -80,8 +80,7 @@ const ProfessionalExperiences: React.FC = () => {
 							<strong>Atribuições: </strong>
 							{elem.assignments}
 						</Text>
-					</Flex>
-					{index < proExData.length - 1 && <Divider />}
+					</VStack>
 				</div>
 			))}
 		</Card>
