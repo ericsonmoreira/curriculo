@@ -22,12 +22,12 @@ export const App = () => (
 			display="flex"
 			flexDir="column"
 		>
-			<Box borderWidth="5px" borderColor="white">
-				<Heading size="2xl" color="white" p="10px">
+			<Box borderWidth={8} borderColor="white">
+				<Heading size="2xl" color="white" p={4}>
 					Éricson Rogério Moreira
 				</Heading>
 			</Box>
-			<Heading size="sm" marginTop={2} color="gray.200">
+			<Heading size="sm" marginTop={2} color="white">
 				Graduando em Ciência da Computação · Frontend Developer
 			</Heading>
 		</Center>

@@ -21,7 +21,7 @@ const AboutMe: React.FC = () => {
 					borderRadius="full"
 				/>
 				<Text color="white">
-					Olá… meu nome é <strong>Éricson</strong>, moro em{' '}
+					Me chamo <strong>Éricson</strong>, moro em{' '}
 					<strong>Fortaleza - CE</strong>, curso de{' '}
 					<strong>
 						Ciência da Computação na UECE - Universidade Estadual do Ceará
