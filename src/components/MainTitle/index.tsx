@@ -3,7 +3,7 @@ import React from 'react';
 
 const MainTitle: React.FC = () => {
 	return (
-		<Box width="full" marginY={2}>
+		<Box width="full">
 			<Heading size="2xl">
 				Éricson Rogério Moreira
 			</Heading>

@@ -1,4 +1,4 @@
-import { HStack, Text, VStack } from '@chakra-ui/react';
+import { Divider, HStack, Text, VStack } from '@chakra-ui/react';
 import Card from 'components/Card';
 import JobPeriod from 'components/JobPeriod';
 import React from 'react';
@@ -18,7 +18,7 @@ const proExData: IProfessionalExperience[] = [
 		title: 'FFIT - Inovação e Tecnologia',
 		office: 'Freelancer',
 		assignments:
-			'Participar como programador Frontend do time de desenvolvimento de sistema web utilizando ReactJS.',
+			'Participar como programador Frontend do time de desenvolvimento de sistema web utilizando React JS e React Native.',
 		pediod: {
 			start: '11/2020',
 		},
@@ -58,31 +58,36 @@ const proExData: IProfessionalExperience[] = [
 const ProfessionalExperiences: React.FC = () => {
 	return (
 		<Card title="Experiências Profissionais">
-			{proExData.map((elem, index) => (
-				<div key={index}>
-					<VStack
-						padding={2}
-						width="full"
-						border="1px solid"
-						borderColor="blue.200"
-						rounded="md"
-						alignItems="start"
-					>
-						<HStack justify="space-between" w="full">
-							<Text as="strong">{elem.title}</Text>
-							<JobPeriod start={elem.pediod.start} end={elem.pediod.end} />
-						</HStack>
-						<Text>
-							<strong>Cargo: </strong>
-							{elem.office}
-						</Text>
-						<Text>
-							<strong>Atribuições: </strong>
-							{elem.assignments}
-						</Text>
-					</VStack>
-				</div>
-			))}
+			<VStack color="white">
+				{proExData.map((elem, index) => (
+					<div key={index}>
+						<VStack
+							padding={2}
+							divider={<Divider />}
+							w="full"
+							border="1px solid"
+							borderColor="blue.200"
+							rounded="md"
+							alignItems="start"
+						>
+							<HStack justify="space-between" w="full">
+								<Text as="strong" fontSize="xl">
+									{elem.title}
+								</Text>
+								<JobPeriod start={elem.pediod.start} end={elem.pediod.end} />
+							</HStack>
+							<Text>
+								<strong>Cargo: </strong>
+								{elem.office}
+							</Text>
+							<Text>
+								<strong>Atribuições: </strong>
+								{elem.assignments}
+							</Text>
+						</VStack>
+					</div>
+				))}
+			</VStack>
 		</Card>
 	);
 };

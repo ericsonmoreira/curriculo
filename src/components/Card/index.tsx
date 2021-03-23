@@ -1,8 +1,8 @@
-import { Heading, StackProps, VStack } from '@chakra-ui/react';
+import { Box, Heading, StackProps, VStack } from '@chakra-ui/react';
 import React from 'react';
 
 interface CardProps {
-  title?: string;
+	title: string;
 }
 
 const Card: React.FC<StackProps & CardProps> = ({
@@ -12,23 +12,28 @@ const Card: React.FC<StackProps & CardProps> = ({
 }) => {
 	return (
 		<VStack
-			borderTopWidth="1rem"
-			borderTopColor="blue.500"
-			bgColor="white"
+			bgColor="gray.700"
 			w="100%"
-			p={4}
 			alignItems="flex-start"
 			borderColor="gray"
 			rounded="md"
 			shadow="lg"
+			overflow="hidden"
 			{...rest}
 		>
-			{title && (
-				<Heading as="u" fontSize="2xl">
+			<Box
+				bgColor="purple.700"
+				h="40px"
+				p={2}
+				w="full"
+				display="flex"
+				alignItems="center"
+			>
+				<Heading fontSize="2xl" color="white">
 					{title}
 				</Heading>
-			)}
-			{children}
+			</Box>
+			<Box display="flex" flexDir="column" p={2}>{children}</Box>
 		</VStack>
 	);
 };

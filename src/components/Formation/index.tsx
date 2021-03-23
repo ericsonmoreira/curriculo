@@ -5,10 +5,10 @@ import React from 'react';
 
 const Formation: React.FC = () => {
 	return (
-		<Card title="Formação">
-			<HStack width="full" justify="space-between">
+		<Card title="Formação" color="white">
+			<HStack justify="space-between" w="full">
 				<Text>Bacharelado em Ciência da Computação - UECE</Text>
-				<JobPeriod start={'2019.2'} notEndLabel="Atualmente Cursando" />
+				<JobPeriod start={'2019.2'} notEndLabel="Cursando" />
 			</HStack>
 		</Card>
 	);

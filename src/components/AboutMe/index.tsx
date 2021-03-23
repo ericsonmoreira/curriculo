@@ -5,7 +5,7 @@ import React from 'react';
 const AboutMe: React.FC = () => {
 	return (
 		<Card title="Sobre mim">
-			<Text>
+			<Text color="white">
 				Olá… meu nome é <strong>Éricson</strong>, moro em{' '}
 				<strong>Fortaleza - CE</strong>, curso de{' '}
 				<strong>

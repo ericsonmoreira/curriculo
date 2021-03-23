@@ -22,7 +22,7 @@ const languagesData: Language[] = [
 const Languages: React.FC = () => {
 	return (
 		<Card title="Línguas">
-			<List spacing={3}>
+			<List spacing={3} color="white">
 				{languagesData.map((elem, index) => (
 					<ListItem key={index}>
 						<ListIcon as={CheckCircleIcon} color="green.500" />
