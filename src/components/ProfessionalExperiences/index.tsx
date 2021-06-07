@@ -15,12 +15,22 @@ export interface IProfessionalExperience {
 
 const proExData: IProfessionalExperience[] = [
 	{
+		title: 'ESP - Escola de Saúde Pública do CE',
+		office: 'Desenvolvedor Pleno',
+		assignments:
+			'Além de usar meus conhecimentos como programador Frontend para o desenvolvimento de sistemas web utilizando React JS e React Native, também estou tendo oportunidades de me aventirar no mundo do Backend.',
+		pediod: {
+			start: '05/2021',
+		},
+	},
+	{
 		title: 'FFIT - Inovação e Tecnologia',
 		office: 'Freelancer',
 		assignments:
 			'Participar como programador Frontend do time de desenvolvimento de sistema web utilizando React JS e React Native.',
 		pediod: {
 			start: '11/2020',
+			end: '04/2021',
 		},
 	},
 	{
