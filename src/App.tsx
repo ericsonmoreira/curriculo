@@ -7,6 +7,7 @@ import Languages from 'components/Languages';
 import ProfessionalExperiences from 'components/ProfessionalExperiences';
 import * as React from 'react';
 import custonTheme from 'theme';
+import { GlassCard } from './styles';
 
 export const App = () => {
 	return (
@@ -22,14 +23,16 @@ export const App = () => {
 				display="flex"
 				flexDir="column"
 			>
-				<Box borderWidth={8} borderColor="white">
-					<Heading size="2xl" color="white" p={4}>
-						Éricson Rogério Moreira
+				<Box m={4}>
+					<GlassCard>
+						<Heading size="2xl" color="white" p={4}>
+							Éricson Rogério Moreira
+						</Heading>
+					</GlassCard>
+					<Heading size="sm" marginTop={2} color="white">
+						Graduando em Ciência da Computação · Frontend Developer
 					</Heading>
 				</Box>
-				<Heading size="sm" marginTop={2} color="white">
-					Graduando em Ciência da Computação · Frontend Developer
-				</Heading>
 			</Center>
 			<Center flexDirection="column" padding={12} backgroundColor="gray.800">
 				<VStack maxWidth="860px" spacing={8}>
@@ -39,7 +42,6 @@ export const App = () => {
 					<ProfessionalExperiences />
 					<Languages />
 					<Interests />
-					{/* <Footer /> */}
 				</VStack>
 			</Center>
 		</ChakraProvider>

@@ -49,6 +49,7 @@
 		]
 	},
 	"devDependencies": {
+		"@types/styled-components": "^5.1.22",
 		"eslint": "^7.18.0",
 		"eslint-config-prettier": "^7.2.0",
 		"eslint-config-react-app": "^6.0.0",
