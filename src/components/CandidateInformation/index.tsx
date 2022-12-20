@@ -22,21 +22,6 @@ const CandidateInformation: React.FC = () => {
 					</Text>
 				</HStack>
 				<HStack>
-					<Icon as={PhoneIcon} />
-					<Text fontSize="md" alignItems="center">
-						<strong>Fone</strong> · (85) 99792-6510
-					</Text>
-				</HStack>
-				<HStack>
-					<Icon as={WhatsAppIcon} />
-					<Text fontSize="md" alignItems="center">
-						<strong>WhatsApp</strong> ·
-					</Text>
-					<Link href="https://wa.me/5585997926510" isExternal color="teal.500">
-						(85) 99792-6510 <Icon as={ExternalLinkIcon} />
-					</Link>
-				</HStack>
-				<HStack>
 					<Icon as={MailIcon} />
 					<Text fontSize="md" alignItems="center">
 						<strong>E-mail</strong> · moreira.ericson@gmail.com/
