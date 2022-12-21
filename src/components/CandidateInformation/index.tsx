@@ -6,8 +6,6 @@ import {
 	LinkedinIcon,
 	MailIcon,
 	MapMarkerIcon,
-	PhoneIcon,
-	WhatsAppIcon,
 } from 'icons';
 import React from 'react';
 

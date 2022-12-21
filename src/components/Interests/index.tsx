@@ -8,7 +8,7 @@ const interestsData = [
 	'HTML',
 	'CSS',
 	'Python',
-  'Java',
+	'Java',
 	'PostgreSQL',
 	'DataScience',
 	'REST',
